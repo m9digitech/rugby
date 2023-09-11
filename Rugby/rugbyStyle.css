@@ -1,0 +1,30 @@
+body {font-family: 'Verdana', sans-serif;}
+p {font-size: 16px; text-align: left;}
+h3 {font-size: 20px; text-align: center;}
+nav {font-size: 26px; background: #e6e6ff; font-family: Verdana;
+	display: block; text-align: center; margin: 0 auto;}
+footer {text-align: center;}
+img {display: block; margin: 0 auto;}
+
+iframe {display: block; margin: 0 auto;}
+
+footer {display: block; margin: 0 auto;}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
