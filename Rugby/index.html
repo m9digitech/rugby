@@ -38,7 +38,7 @@ image11.src="images/asia/fireworks.jpg"
 //-->
 </script>
 <style>
-
+.mySlides {display:none;}
 </style>
 </head>
 <body>
@@ -46,7 +46,28 @@ image11.src="images/asia/fireworks.jpg"
 <a href="index.html">
 <img src="images/rugby_header.jpg" alt="The game of Rugby."  width="1968" height="136" /></a>
 </header><br>
-<header>
+</header>
+<div class="w3-content w3-section" style="max-width:500px">
+ <img class="mySlides" src="images/chuttersnap.jpg" style="width:100%"> 
+ <img class="mySlides" src="images/james-coleman1.jpg" style="width:100%">
+ <img class="mySlides" src="images/james-coleman2.jpg" style="width:100%">
+ <img class="mySlides" src="images/james-coleman3.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
 <a href="index.html">
 <img src="images/atl_header.png" title="This error means there's no image in this location."  width="100%" height="auto" /></a>
 </header><br>
@@ -81,7 +102,6 @@ allowfullscreen></iframe><br>
 <p>In 1845, the first laws were written by students attending Rugby School; other significant events in the early development of rugby include the decision by Blackheath F.C. to leave The Football Association in 1863 and, in 1895, the split between rugby union and rugby league. Historically rugby union was an amateur sport, but in 1995 formal restrictions on payments to players were removed, making the game openly professional at the highest level for the first time.</p>
 
 <p>Rugby union spread from the Home Nations of Great Britain and Ireland, with other early exponents of the sport including Australia, New Zealand, South Africa and France. The sport is followed primarily in the British Isles, France, Georgia, Oceania, Southern Africa, Argentina, and to a lesser extent Italy, Uruguay, the United States, Canada, and Japan, its growth occurring during the expansion of the British Empire and through French proponents (Rugby Europe) in Europe. Countries that have adopted rugby union as their de facto national sport include Fiji, Georgia, Madagascar, New Zealand, Samoa, Tonga, and Wales.</p>
-
 </div>
 <img src="images/asia/beach.jpg" title="Where to find Rugby games in NZ" name="slide" width="40%" height="auto" />
 <div class="container">
