@@ -119,6 +119,7 @@ picture-in-picture; web-share" allowfullscreen></iframe><br>
  <img class="mySlides" src="images/james-coleman2.jpg" style="width:100%">
  <img class="mySlides" src="images/james-coleman3.jpg" style="width:100%">
 </div>
+<!--above block of codes are for the 'images'. The width percentage can be used to vary the size of the image. -->
 <script>
 var myIndex = 0;
 carousel();
@@ -131,7 +132,8 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.}
+    setTimeout(carousel, 3000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
 </script>
 <br>
 <footer><div class="container">
