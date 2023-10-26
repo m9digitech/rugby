@@ -33,11 +33,12 @@ footer {display: block; margin: 0 auto;}
 table, td, th {
   border: 1px solid;
 }
-.center {
-  border: none;
-  margin: auto;
-  width: 50%;
-  padding: none;
+#nav {
+  text-align: center;
+}
+
+.navbar {
+  display: inline-block;
 }
 
 table {
