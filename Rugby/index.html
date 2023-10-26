@@ -47,27 +47,7 @@ image11.src="images/asia/fireworks.jpg"
 <img src="images/rugby_header.jpg" alt="The game of Rugby."  width="1968" height="136" /></a>
 </header><br>
 </header>
-<div class="w3-content w3-section" style="max-width:500px">
- <img class="mySlides" src="images/chuttersnap.jpg" style="width:100%"> 
- <img class="mySlides" src="images/james-coleman1.jpg" style="width:100%">
- <img class="mySlides" src="images/james-coleman2.jpg" style="width:100%">
- <img class="mySlides" src="images/james-coleman3.jpg" style="width:100%">
-</div>
-<script>
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
-}
-</script>
+
 <a href="index.html">
 <img src="images/atl_header.png" title="This error means there's no image in this location."  width="100%" height="auto" /></a>
 </header><br>
@@ -133,8 +113,28 @@ picture-in-picture; web-share" allowfullscreen></iframe><br>
     <td><img src="images/rugby1.png" title="about this image"  width="100%" height="auto" /></td>
   </tr>
 </table>
-
 <script>
+<div class="w3-content w3-section" style="max-width:500px">
+ <img class="mySlides" src="images/chuttersnap.jpg" style="width:100%"> 
+ <img class="mySlides" src="images/james-coleman1.jpg" style="width:100%">
+ <img class="mySlides" src="images/james-coleman2.jpg" style="width:100%">
+ <img class="mySlides" src="images/james-coleman3.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
 <!--
 //variable that will increment through the images
 var step=1
