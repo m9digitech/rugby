@@ -34,10 +34,10 @@ table, td, th {
   border: 1px solid;
 }
 .center {
-  border: 5px solid;
+  border: none;
   margin: auto;
   width: 50%;
-  padding: 10px;
+  padding: none;
 }
 
 table {
