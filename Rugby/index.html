@@ -4,8 +4,8 @@
 <title>Rugby</title>
 <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
 <link href="rugbyStyle.css" rel="stylesheet" type="text/css" />
-
 <!--the 2 link elements above proccess the connection to the external css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -110,7 +110,19 @@ picture-in-picture; web-share" allowfullscreen></iframe><br>
  <img class="mySlides" src="images/stefan1.jpg" style="width:100%">
  <img class="mySlides" src="images/stefan2.jpg" style="width:100%">
 </div>
+<h2>Search Button</h2>
 
+<p>Full width:</p>
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<p>Centered inside a form with max-width:</p>
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 <!--above block of codes are for the 'images'. The width percentage can be used to vary the size of the image. -->
 <script>
 var myIndex = 0;
