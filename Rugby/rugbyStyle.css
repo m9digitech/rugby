@@ -83,3 +83,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+.w3-content {
+  max-width: 500px;
+  margin: 0 auto; /* This will center the element horizontally */
+}
